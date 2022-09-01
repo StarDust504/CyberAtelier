@@ -39,6 +39,10 @@ body {
     font-weight: lighter;
 }
 
+.catMobile {
+    display: none;
+}
+
 .bannerBtn {
     width: 90%;
     font-family: 'Roboto';
@@ -307,5 +311,121 @@ input[name="r"]{
         position: relative;
         overflow: hidden;
         margin-top: 200px;
+    }
+}
+
+@media screen and (max-device-width: 480px) {
+    .disable-dbl-tap-zoom {
+        touch-action: manipulation;
+    }
+    .banner {
+        margin: 0;
+        background-image: url("images/bannerMobile.svg");
+        background-repeat: no-repeat;
+        background-size: cover;
+        min-height: 30vw;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .bannerContent {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 40vw;
+        font-size: 4.2vw;
+        font-weight: bold;
+        text-transform: uppercase;
+        text-align: right;
+        font-family: 'Roboto';
+        color: white;
+        line-height: 4vw;
+    }
+    
+    .bannerText1 {
+        font-size: 2.8vw;
+    }
+    
+    .bannerText2 {
+        font-size: 2vw;
+        font-weight: lighter;
+    }
+    
+    .bannerBtn {
+        width: 120%;
+        font-family: 'Roboto';
+        background-color: #74CCCB;
+        color: white;
+        text-transform: uppercase;
+        border: none;
+        padding: 10px 0;
+    }
+    
+    .bannerContent p {
+        margin-bottom: 2%;
+    }
+    
+    .divide {
+        display: none;
+    }
+
+    .info {
+        display: flex;
+        width: 100%;
+    }
+    
+    .infoText {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 56px 64px;
+        font-family: 'Roboto';
+        text-transform: uppercase;
+        font-size: 2vw;
+        border-bottom: 2px solid black;
+    }
+    
+    .bold {
+        font-weight: bold;
+    }
+
+    .catBtn {
+        display: none;
+
+    }
+    
+    .slide-image {
+        margin-top: 5%;
+        height: 100%;
+        width: 25%;
+        transition: all .6s ease;
+    
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+        font-family: 'Roboto';
+        color: white;
+        font-size: 2vw;
+        text-transform: uppercase;
+    
+    }
+
+    .catMobile {
+        display: inline;
+        width: 70%;
+        background-color: #74CCCB;
+        border: none;
+
+        font-family: 'Roboto';
+        text-transform: uppercase;
+        color: white;
+        font-size: 3vw;
+        letter-spacing: 0.06em;
+        margin-bottom: 32px;
+        text-align: center;
     }
 }
