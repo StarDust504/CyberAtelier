@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <link rel="stylesheet" href="style.css">
+        <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <script language="JavaScript">
+            function nextDres(){
+                let radios = document.querySelectorAll('input[type="radio"]');
+                let radiosLen = radios.length;
+                let value = 0;
+                for (let radio of radios) {
+		            if (radio.checked) {;
+                        value = radio.value;
+                        radio.checked = false;
+		            }
+	            }
+                value++;
+                if(value > radiosLen){
+                    value = 1;
+                }
+                for (let radio of radios) {
+                    if(radio.value == value){
+                        radio.checked = true;
+                        if(radio.value == 1){
+                            document.getElementById("s1").style.marginLeft = '0';
+                        }
+                        else if(radio.value == 2){
+                            document.getElementById("s1").style.marginLeft = '-25%';
+                        }
+                        else if(radio.value == 3){
+                            document.getElementById("s1").style.marginLeft = '-50%';
+                        }
+                        else if(radio.value == 4){
+                            document.getElementById("s1").style.marginLeft = '-75%';
+                        }
+                        
+                    }
+                }
+                
+            }
+
+
+            function prevDres(){
+                let radios = document.querySelectorAll('input[type="radio"]');
+                let radiosLen = radios.length;
+                let value = 0;
+                for (let radio of radios) {
+		            if (radio.checked) {;
+                        value = radio.value;
+                        radio.checked = false;
+		            }
+	            }
+                value--;
+                if(value == 0){
+                    value = radiosLen;
+                }
+                for (let radio of radios) {
+                    if(radio.value == value){
+                        radio.checked = true;
+                        if(radio.value == 1){
+                            document.getElementById("s1").style.marginLeft = '0';
+                        }
+                        else if(radio.value == 2){
+                            document.getElementById("s1").style.marginLeft = '-25%';
+                        }
+                        else if(radio.value == 3){
+                            document.getElementById("s1").style.marginLeft = '-50%';
+                        }
+                        else if(radio.value == 4){
+                            document.getElementById("s1").style.marginLeft = '-75%';
+                        }
+                        
+                    }
+                }
+                
+            }
+        </script>
+        <div class="banner">
+            <div class="bannerContent">
+                <p>Каталог-витрина<span class="bannerText1"> специальных коллекций</span><span class="bannerText2"> от Fashion-дизайнеров и брендов</span></p>
+                <button class="bannerBtn">Перейти к каталогу</button>
+            </div>
+        </div>
+        <div class="divide"></div>
+        <div class="info">
+            <div class="infoText">
+                <p class="bold">В Приморье официально запустили стратегическую программу «Киберателье и креативные индустрии Приморья».</p>
+                <p>Ведомственный проект, рассчитанный до 2030 года, по оценке экспертов, поможет не только перевести легкую промышленность края на новый уровень, но и оказать существенное воздействие на экономику региона в целом.</p>
+            </div>
+        </div>
+        <div class="new">
+            <h1>Новинки каталога</h1>
+        </div>
+        <div class="catalogue">
+            <div class="rectangle">
+                <div class="arrowHolder">
+                    <div class="button prev-button" onclick="prevDres()">
+                        <i class="arrow left"></i>
+                    </div>
+                    <div class="slides-container">
+
+                        <input type="radio" name="r" id="dress1" value="1" checked>
+                        <input type="radio" name="r" id="dress2" value="2">
+                        <input type="radio" name="r" id="dress3" value="3">
+                        <input type="radio" name="r" id="dress4" value="4">
+
+
+                    <div class="dres-imgs">
+                        <div class="slide-image" id="s1">
+                            <img src="images/model.svg" alt="1">
+                            <p>RN</p>
+                        </div>
+                        <div class="slide-image">
+                            <img src="images/model2.svg" asvglt="2">
+                            <p>Hello</p>
+                        </div>
+                        <div class="slide-image">
+                            <img src="images/model3.svg" alt="3">
+                            <p>Наименование товара 3</p>
+                        </div>
+                        <div class="slide-image">
+                            <img src="images/image4.svg" alt="4">
+                            <p>Наименование товара 4</p>
+                        </div>
+                    </div>
+                    <button class="catBtn">перейти</button>
+                    </div>
+                    <div class="button next-button" onclick="nextDres()">
+                        <i class="arrow right"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
