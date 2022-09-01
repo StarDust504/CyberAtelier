@@ -207,3 +207,105 @@ input[name="r"]{
     letter-spacing: 0.06em;
     margin-bottom: 32px;
 }
+
+@media screen and (min-device-width: 2200px) {
+    .catalogue {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        position: relative;
+        margin-top: 20px;
+    }
+    .rectangle {
+        background: linear-gradient(87.63deg, #150548 0.21%, #92294C 54.94%, #ECA461 107.36%);
+    
+        position: relative;
+        height: 50vh;
+        width: 40%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .arrowHolder {
+        position: absolute;
+        height: 211.64px;
+        width: 120%;
+        background: #74CCCB;
+    
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .catBtn {
+        width: 100%;
+        background-color: #74CCCB;
+        border: none;
+    
+        font-family: 'Roboto';
+        text-transform: uppercase;
+        color: white;
+        font-size: 1.3vw;
+        letter-spacing: 0.06em;
+
+    }
+    .slides-container {
+        min-height: 30vw;
+        width: 386px;
+        position: relative;
+        overflow: hidden;
+
+    }
+}
+
+@media screen and (min-device-width: 2300px) {
+    .catalogue {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        position: relative;
+        margin-top: 20px;
+    }
+    .rectangle {
+        background: linear-gradient(87.63deg, #150548 0.21%, #92294C 54.94%, #ECA461 107.36%);
+    
+        position: relative;
+        height: 50vh;
+        width: 40%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .arrowHolder {
+        position: absolute;
+        height: 211.64px;
+        width: 120%;
+        background: #74CCCB;
+    
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .catBtn {
+        width: 100%;
+        background-color: #74CCCB;
+        border: none;
+    
+        font-family: 'Roboto';
+        text-transform: uppercase;
+        color: white;
+        font-size: 1.3vw;
+        letter-spacing: 0.06em;
+
+    }
+    .slides-container {
+        min-height: 30vw;
+        width: 386px;
+        position: relative;
+        overflow: hidden;
+        margin-top: 200px;
+    }
+}
