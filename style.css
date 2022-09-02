@@ -41,6 +41,11 @@ header {
     color: black;
 }
 
+.leftSide .active {
+    border-bottom: 2px solid black;
+    font-weight: bold;
+}
+
 .rightSide {
     margin-right: 64px;
 }
