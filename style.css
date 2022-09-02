@@ -19,6 +19,7 @@ header {
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
+    padding: 15px 0px;
 }
 
 .leftSide {
@@ -27,8 +28,9 @@ header {
     width: 50%;
     justify-content: space-around;
     align-items: center;
+    margin-left: 44px;
 
-    font-size: 1vw;
+    font-size: 1.5vw;
     font-family: 'Roboto';
     font-weight: 100;
 }
@@ -36,6 +38,18 @@ header {
 .leftSide a {
     text-decoration: none;
     color: black;
+}
+
+.rightSide {
+    margin-right: 64px;
+}
+.headBtn {
+    font-size: 1.5vw;
+    background-color: #74CCCB;
+    color: white;
+    font-family: 'Roboto';
+    text-transform: uppercase;
+    border: none;
 }
 
 .bannerContent {
@@ -236,6 +250,46 @@ input[name="r"]{
     margin-bottom: 32px;
 }
 
+footer {
+    background-color: #0F0F0E;
+    padding: 37px 0px;
+}
+
+.top {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 0px 64px;
+
+    color: white;
+    font-size: 1vw;
+    text-transform: uppercase;
+    font-family: 'Roboto';
+    font-weight: bold;
+}
+
+.bottom {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 0px 64px;
+    align-items: center;
+}
+
+.bottomLeft {
+    width: 50%;
+    display: flex;
+    justify-content: space-between;
+
+    font-family: 'Roboto';
+    font-size: 1vw;
+}
+.bottomLeft a {
+    color: white;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
 @media screen and (min-device-width: 2200px) {
     .catalogue {
         display: flex;
@@ -335,6 +389,29 @@ input[name="r"]{
         position: relative;
         overflow: hidden;
         margin-top: 200px;
+    }
+
+    .leftSide {
+        display: flex;
+        flex-direction: row;
+        width: 50%;
+        justify-content: space-around;
+        align-items: center;
+    
+        font-size: 1vw;
+        font-family: 'Roboto';
+        font-weight: 100;
+    }
+
+    .headBtn {
+        font-size: 1vw;
+    }
+
+    .top {
+        font-size: 0.7vw;
+    }
+    .bottomLeft a {
+        font-size: 0.7vw;
     }
 }
 
