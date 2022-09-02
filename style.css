@@ -14,6 +14,30 @@ body {
     align-items: flex-end;
 }
 
+header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.leftSide {
+    display: flex;
+    flex-direction: row;
+    width: 50%;
+    justify-content: space-around;
+    align-items: center;
+
+    font-size: 1vw;
+    font-family: 'Roboto';
+    font-weight: 100;
+}
+
+.leftSide a {
+    text-decoration: none;
+    color: black;
+}
+
 .bannerContent {
     display: flex;
     flex-direction: column;
@@ -323,7 +347,7 @@ input[name="r"]{
         background-image: url("images/bannerMobile.svg");
         background-repeat: no-repeat;
         background-size: cover;
-        min-height: 30vw;
+        min-height: 40vw;
         width: 100%;
         display: flex;
         justify-content: center;
