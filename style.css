@@ -173,22 +173,23 @@ header {
 }
 
 .catalogue {
+    min-height: 841px;
     display: flex;
     flex-direction: column;
+    justify-content: space-around;
     align-items: center;
     position: relative;
 }
 
 .rectangle {
-    background: linear-gradient(87.63deg, #150548 0.21%, #92294C 54.94%, #ECA461 107.36%);
-
     position: relative;
     height: 557.34px;
-    width: 70%;
+    width: 80%;
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-bottom: 64px;
+
+    background: linear-gradient(87.63deg, #150548 0.21%, #92294C 54.94%, #ECA461 107.36%);
 }
 
 .arrowHolder {
@@ -196,11 +197,17 @@ header {
     height: 211.64px;
     width: 120%;
     background: #74CCCB;
+    backdrop-filter: blur(100px);
 
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: center;
+}
+
+.prev-button,
+.next-button {
+    font-size: 90px;
 }
 
 .slides-container {
@@ -228,8 +235,7 @@ header {
     align-items: center;
     font-family: 'Roboto';
     color: white;
-    font-size: 1vw;
-    text-transform: uppercase;
+    font-size: 20px;
 
 }
 
@@ -258,7 +264,6 @@ input[name="r"]{
     position: absolute;
     visibility: hidden;
 }
-
 .catBtn {
     width: 100%;
     background-color: #74CCCB;
@@ -312,106 +317,38 @@ footer {
     text-transform: uppercase;
 }
 
+
 @media screen and (min-device-width: 2200px) {
-    .catalogue {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        position: relative;
-        margin-top: 20px;
-    }
+
     .rectangle {
-        background: linear-gradient(87.63deg, #150548 0.21%, #92294C 54.94%, #ECA461 107.36%);
-    
-        position: relative;
-        height: 50vh;
+        height: 557.34px;
         width: 40%;
+    }
+    /*.rectangle {
+        position: relative;
+        height: 557.34px;
+        width: 80%;
         display: flex;
         justify-content: center;
         align-items: center;
-    }
     
-    .arrowHolder {
-        position: absolute;
-        height: 211.64px;
-        width: 120%;
-        background: #74CCCB;
+        background: linear-gradient(87.63deg, #150548 0.21%, #92294C 54.94%, #ECA461 107.36%);
+    }*/
     
-        display: flex;
-        flex-direction: row;
-        justify-content: space-between;
-        align-items: center;
-    }
-    .catBtn {
-        width: 100%;
-        background-color: #74CCCB;
-        border: none;
-    
-        font-family: 'Roboto';
-        text-transform: uppercase;
-        color: white;
-        font-size: 1.3vw;
-        letter-spacing: 0.06em;
 
-    }
-    .slides-container {
-        min-height: 30vw;
-        width: 386px;
-        position: relative;
-        overflow: hidden;
 
-    }
 }
 
 @media screen and (min-device-width: 2300px) {
-    .catalogue {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        position: relative;
-        margin-top: 20px;
-    }
     .rectangle {
-        background: linear-gradient(87.63deg, #150548 0.21%, #92294C 54.94%, #ECA461 107.36%);
-    
-        position: relative;
-        height: 50vh;
+        height: 657.34px;
         width: 40%;
-        display: flex;
-        justify-content: center;
-        align-items: center;
     }
-    
-    .arrowHolder {
-        position: absolute;
-        height: 211.64px;
-        width: 120%;
-        background: #74CCCB;
-    
-        display: flex;
-        flex-direction: row;
-        justify-content: space-between;
-        align-items: center;
-    }
-    .catBtn {
-        width: 100%;
-        background-color: #74CCCB;
-        border: none;
-    
-        font-family: 'Roboto';
-        text-transform: uppercase;
-        color: white;
-        font-size: 1.3vw;
-        letter-spacing: 0.06em;
 
-    }
     .slides-container {
-        min-height: 30vw;
-        width: 386px;
-        position: relative;
-        overflow: hidden;
-        margin-top: 200px;
+        margin-top: 10%;
     }
+    
 
     .leftSide {
         display: flex;
@@ -798,5 +735,17 @@ footer {
 
     .catBtn {
         font-size: 1.5vw;
+    }
+    /*.rectangle {
+        height: 557.34px;
+        width: 50%;
+    }*/
+}
+
+@media screen and (min-device-width: 1201px) and (max-device-width: 2199px) {
+
+    .rectangle {
+        height: 557.34px;
+        width: 50%;
     }
 }
