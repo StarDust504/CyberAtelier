@@ -385,7 +385,7 @@ footer {
         background-image: url("images/bannerMobile.svg");
         background-repeat: no-repeat;
         background-size: cover;
-        min-height: 40vw;
+        min-height: 47vw;
         width: 100%;
         display: flex;
         justify-content: center;
@@ -411,7 +411,7 @@ footer {
     }
     
     .bannerText2 {
-        font-size: 2vw;
+        font-size: 1.9vw;
         font-weight: lighter;
     }
     
@@ -438,13 +438,17 @@ footer {
         display: flex;
         width: 100%;
     }
+
+    .catalogue {
+        margin: 5% 0px;
+    }
     
     .infoText {
         width: 100%;
         display: flex;
         flex-direction: column;
         align-items: center;
-        padding: 56px 64px;
+        padding: 70px 64px;
         font-family: 'Roboto';
         text-transform: uppercase;
         font-size: 13px;
@@ -749,5 +753,23 @@ footer {
     .rectangle {
         height: 557.34px;
         width: 50%;
+    }
+}
+
+@media screen and (min-device-width:281px) and ( max-device-width:312px){
+    .bannerText2 {
+        font-size: 1.5vw ;
+        font-weight: lighter;
+    }
+}
+
+@media screen and (max-device-width:280px){
+    .bannerText2 {
+        font-size:  25px;
+        font-weight: lighter;
+    }
+
+    .bannerContent {
+        width: 50vw;
     }
 }
