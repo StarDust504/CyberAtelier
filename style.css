@@ -327,12 +327,68 @@ footer {
     body {
         overflow-x: hidden;
     }
+
+    .leftSide img {
+        width: 120px;
+    }
+    
+    
     .slide-image {
         margin-top: 23%;
     }
     .arrowHolder {
         width: 120%;
         height: 20%;
+    }
+
+    footer {
+        display: none;
+    }
+
+    .footerMobile {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        background-color: #0F0F0E;
+        padding: 40px 35px;
+    }
+
+    .leftFooter {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+
+    .leftFooter a{
+        color: white;
+        font-family: 'Roboto';
+        font-size: 21px;
+        line-height: 16px;
+        text-transform: uppercase;
+        text-decoration: none;
+    }
+
+    .rightFooter {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start; 
+        color: white;
+        font-family: 'Roboto';
+        font-size: 3vw;
+        text-transform: uppercase;
+        text-decoration: none;
+        line-height: 6vw;
+        width: 20%;
+        text-align: right;
+    }
+
+    .rightFooter a {
+        color: white;
+        font-family: 'Roboto';
+        font-size: 3vw;
+        text-transform: uppercase;
+        text-decoration: none;
+        line-height: 6vw;
     }
 }
 @media (min-width: 581px) and (max-width: 760px){
@@ -345,6 +401,60 @@ footer {
     .arrowHolder {
         width: 120%;
         height: 20%;
+    }
+
+    .leftSide img {
+        width: 130px;
+    }
+
+    footer {
+        display: none;
+    }
+
+    .footerMobile {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        background-color: #0F0F0E;
+        padding: 40px 35px;
+    }
+
+    .leftFooter {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+
+    .leftFooter a{
+        color: white;
+        font-family: 'Roboto';
+        font-size: 21px;
+        line-height: 16px;
+        text-transform: uppercase;
+        text-decoration: none;
+    }
+
+    .rightFooter {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start; 
+        color: white;
+        font-family: 'Roboto';
+        font-size: 3vw;
+        text-transform: uppercase;
+        text-decoration: none;
+        line-height: 6vw;
+        width: 20%;
+        text-align: right;
+    }
+
+    .rightFooter a {
+        color: white;
+        font-family: 'Roboto';
+        font-size: 3vw;
+        text-transform: uppercase;
+        text-decoration: none;
+        line-height: 6vw;
     }
 }
 
