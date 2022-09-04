@@ -26,7 +26,7 @@ header {
 .leftSide {
     display: flex;
     flex-direction: row;
-    width: 50%;
+    width: 70%;
     justify-content: space-around;
     align-items: center;
     margin-left: 44px;
@@ -196,7 +196,7 @@ header {
 
 .arrowHolder {
     position: absolute;
-    height: 211.64px;
+    height: 30%;
     width: 120%;
     background: #74CCCB;
     backdrop-filter: blur(100px);
@@ -223,6 +223,7 @@ header {
     width: 400%;
     height: 100%;
     display: flex;
+    align-items: center;
 }
 
 .slide-image {
@@ -238,7 +239,7 @@ header {
     font-family: 'Roboto';
     color: white;
     font-size: 20px;
-
+    
 }
 
 .slide-image img {
@@ -317,6 +318,70 @@ footer {
     color: white;
     text-decoration: none;
     text-transform: uppercase;
+}
+
+@media (max-width: 580px) {
+    body {
+        overflow-x: hidden;
+    }
+    .slide-image {
+        margin-top: 23%;
+    }
+    .arrowHolder {
+        width: 120%;
+        height: 20%;
+    }
+}
+@media (min-width: 581px) and (max-width: 760px){
+    body {
+        overflow-x: hidden;
+    }
+    .slide-image {
+        margin-top: 20%;
+    }
+    .arrowHolder {
+        width: 120%;
+        height: 20%;
+    }
+}
+
+@media (min-width: 761px) and (max-width: 900px){
+    body {
+        overflow-x: hidden;
+    }
+    .slide-image {
+        margin-top: 15%;
+    }
+    .arrowHolder {
+        width: 120%;
+        height: 20%;
+    }
+}
+
+@media (min-width: 901px) and (max-width: 1000px){
+    body {
+        overflow-x: hidden;
+    }
+    .slide-image {
+        margin-top: 10%;
+    }
+    .arrowHolder {
+        width: 120%;
+        height: 30%;
+    }
+}
+
+@media (min-width: 1001px) and (max-width: 1200px){
+    body {
+        overflow-x: hidden;
+    }
+    .slide-image {
+        margin-top: 10%;
+    }
+    .arrowHolder {
+        width: 120%;
+        height: 30%;
+    }
 }
 
 
