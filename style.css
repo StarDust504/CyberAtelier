@@ -806,8 +806,8 @@ footer {
     .leftFooter a{
         color: white;
         font-family: 'Roboto';
-        font-size: 21px;
-        line-height: 16px;
+        font-size: 31px;
+        line-height: 2em;
         text-transform: uppercase;
         text-decoration: none;
     }
