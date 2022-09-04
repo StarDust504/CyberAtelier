@@ -180,12 +180,12 @@ header {
     justify-content: space-around;
     align-items: center;
     position: relative;
-    margin-bottom: 40px;
+    margin-bottom: 30px;
 }
 
 .rectangle {
     position: relative;
-    height: 557.34px;
+    height: 657.34px;
     width: 80%;
     display: flex;
     justify-content: center;
@@ -226,7 +226,7 @@ header {
     align-items: center;
 }
 
-.slide-image {
+.slide-image { 
     margin-top: 5%;
     height: 100%;
     width: 25%;
