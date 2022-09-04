@@ -290,12 +290,15 @@ footer {
     flex-direction: row;
     justify-content: space-between;
     padding: 0px 64px;
+}
 
+.top a {
     color: white;
     font-size: 20px;
     text-transform: uppercase;
     font-family: 'Roboto';
     font-weight: bold;
+    text-decoration: none;
 }
 
 .bottom {
@@ -709,6 +712,15 @@ footer {
         line-height: 6vw;
         width: 20%;
         text-align: right;
+    }
+
+    .rightFooter a {
+        color: white;
+        font-family: 'Roboto';
+        font-size: 3vw;
+        text-transform: uppercase;
+        text-decoration: none;
+        line-height: 6vw;
     }
 
 }
