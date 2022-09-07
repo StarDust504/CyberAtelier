@@ -302,6 +302,17 @@ footer {
     text-decoration: none;
 }
 
+.topText {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    padding-bottom: 20px;
+    text-align: right;
+}
+.uni {
+    text-decoration: underline;
+}
+
 .bottom {
     display: flex;
     flex-direction: row;
